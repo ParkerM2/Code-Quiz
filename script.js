@@ -5,12 +5,13 @@ var qContainerEl = document.getElementById("question-container");
 var qEl = document.getElementById("question");
 var answerButtonEl = document.getElementById("answer-buttons");
 // Questions/Answers
-var questionOne = 'What is the framework of a webpage?';
+var questionOne = document.getElementById("question1");
+questionOne.innerHTML("What is the framework of a WebPage?")
 var answerQ1 = [
-            { text: 'A wood 2x4', correct: false },
-            { text: 'HTML', correct: true },
-            { text: 'True', correct: false },
-            { text: 'False', correct: false }
+            { answer1: 'A wood 2x4', correct: false },
+            { answer2: 'HTML', correct: true },
+            { answer3: 'True', correct: false },
+            { answer4: 'False', correct: false }
 ]
 var questionTwo = 'What is MS Studio Code?';
 var answerQ2 = [
@@ -51,13 +52,13 @@ startButt.addEventListener("click", function () {
 })
 // show question function
 function showQ() {
-    qContainerEl.classList.remove("hide")
-    qEl.replaceWith(string, questionOne)
+    qContainerEl.classList.remove("hide");
+    qContainerEl.textContent = questionOne.textContent
 }
 
 // showing answer
 function showAns() {
-    answerButtonEl.classList.remove("hide")
+    answerButtonEl.textContent = answerQ1.textContent
     
 
 }
