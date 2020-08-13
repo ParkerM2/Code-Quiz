@@ -12,35 +12,34 @@ var answerQ1 = [
     "True", 
     "False",
 ]
-var questionTwo = 'What is MS Studio Code?';
+var questionTwo = document.getElementById("question2");
 var answerQ2 = [
             'A music editing program', 
             'A 5Star Restaurant',
             'A text editor',
             'None of the above'
-]
-            
-var questionThree = 'What is Google Chrome?';
+]          
+var questionThree = document.getElementById("question3");
 var answerQ3 = [
             'Music editing program',
             'Web Browser',
             'A and B',
             'C and None of the Above',
 ]           
-var questionFour = 'What is an API?';
+var questionFour = document.getElementById("question4");
 var answerQ4 = [
             'A 2000s Punk Rock Band',
             'Set of functions etc',
             'Color of spray paint',
             'internet browser',
-        ]
-var questionFive = 'What is a for loop?';
+]
+var questionFive = document.getElementById("question5");
 var answerQ5 = [
             'A Hot Wheels Toy',
             'Type of osteoporisis',
             'A code name for Loopdloop',
             'None of the Above',
-        ]
+]
 
 // timer
 
@@ -49,6 +48,8 @@ startButt.addEventListener("click", function () {
     showQ1();
     showAns1();
 })
+
+
 // show question function
 function showQ1() {
     // qContainerEl.classList.remove("hide");
