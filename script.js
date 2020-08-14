@@ -5,42 +5,7 @@ var qContainerEl = document.getElementById("question-container");
 var qEl = document.getElementById("question");
 var answerButtonEl = document.getElementById("answer-buttons");
 // Questions/Answers
-var questionOne = document.getElementById("question1");
-var answerQ1 = [
-    "A wood 2x4", 
-    "HTML", 
-    "True", 
-    "False",
-]
-var questionTwo = document.getElementById("question2");
-var answerQ2 = [
-            'A music editing program', 
-            'A 5Star Restaurant',
-            'A text editor',
-            'None of the above'
-]          
-var questionThree = document.getElementById("question3");
-var answerQ3 = [
-            'Music editing program',
-            'Web Browser',
-            'A and B',
-            'C and None of the Above',
-]           
-var questionFour = document.getElementById("question4");
-var answerQ4 = [
-            'A 2000s Punk Rock Band',
-            'Set of functions etc',
-            'Color of spray paint',
-            'internet browser',
-]
-var questionFive = document.getElementById("question5");
-var answerQ5 = [
-            'A Hot Wheels Toy',
-            'Type of osteoporisis',
-            'A code name for Loopdloop',
-            'None of the Above',
-]
-
+        
 // timer
 
 // startbutton
@@ -51,27 +16,65 @@ startButt.addEventListener("click", function () {
 
 
 // show question function
+
+
+// QUESTION ONE //
 function showQ1() {
     // qContainerEl.classList.remove("hide");
     questionOne.innerHTML = "Name a Webpage Framework";
 }
-
+var questionOne = document.getElementById("question1");
+var answerQ1 = [
+    "A wood 2x4", 
+    "HTML", 
+    "True", 
+    "False",
+]
+// QUESTION TWO //
 function showQ2() {
     // qContainerEl.classList.remove("hide");
     questionTwo.innerHTML = "What is MS Visual Studio Code?";
 }
+var questionTwo = document.getElementById("question2");
+var answerQ2 = [
+            'A music editing program', 
+            'A 5Star Restaurant',
+            'A text editor',
+            'None of the above'
+]
 function showQ3() {
     // qContainerEl.classList.remove("hide");
     questionThree.innerHTML = "what is Google Chrome?";
 }
+var questionThree = document.getElementById("question3");
+var answerQ3 = [
+            'Music editing program',
+            'Web Browser',
+            'A and B',
+            'C and None of the Above',
+]   
 function showQ4() {
     // qContainerEl.classList.remove("hide");
     questionFour.innerHTML = "What is an API?";
 }
+var questionFour = document.getElementById("question4");
+var answerQ4 = [
+            'A 2000s Punk Rock Band',
+            'Set of functions etc',
+            'Color of spray paint',
+            'internet browser',
+]
 function showQ5() {
     // qContainerEl.classList.remove("hide");
     questionFive.innerHTML = "what is a for loop?";
 }
+var questionFive = document.getElementById("question5");
+var answerQ5 = [
+            'A Hot Wheels Toy',
+            'Type of osteoporisis',
+            'A code name for Loopdloop',
+            'None of the Above',
+]
 
 // showing answers
 function showAns1() {
@@ -128,5 +131,7 @@ function showAns5() {
 
 
 // function for reseting questions
+
+
 // calling next question
 
