@@ -1,101 +1,107 @@
 // HTML elements
 var startButt = document.getElementById("start-btn");
 var nextButt = document.getElementById("next-btn");
-var qContainerEl = document.getElementById("question-container");
+var qContainerEl1 = document.getElementById("question-container")
+var qContainerEl2 = document.getElementById("question-container2")
+var qContainerEl3 = document.getElementById("question-container3")
+var qContainerEl4 = document.getElementById("question-container4")
+var qContainerEl5 = document.getElementById("question-container5")
 var qEl = document.getElementById("question");
-var answerButtonEl = document.getElementById("answer-buttons");
+var questionOne = document.getElementById("question1");
+var questionTwo = document.getElementById("question2");
+var questionThree = document.getElementById("question3");
+var questionFour = document.getElementById("question4");
+var questionFive = document.getElementById("question5");
+var answerQ1 = {
+    an1 : "A wood 2x4", 
+    an2 : "HTML", 
+    an3 : "True", 
+    an4 : "False",
+}
+var answerQ2 = {
+    an1 : 'A music editing program', 
+    an2 : 'A 5Star Restaurant',
+    an3 : 'A text editor',
+    an4 : 'None of the above',
+}
+// SS
+var answerQ4 = {
+    an1 : 'A 2000s Punk Rock Band',
+    an2 : 'Set of functions etc',
+    an3 : 'Color of spray paint',
+    an4 : 'internet browser',
+}
+var answerQ5 = {
+    an1 : 'A Hot Wheels Toy',
+    an2 : 'Type of osteoporisis',
+    an3 : 'A code name for Loopdloop',
+    an4 : 'None of the Above',
+}
 // Questions/Answers
         
 // timer
 
-// startbutton
+// start button
 startButt.addEventListener("click", function () {
     showQ1();
     showAns1();
 })
 
-
-// show question function
-
-
 // QUESTION ONE //
 function showQ1() {
     // qContainerEl.classList.remove("hide");
     questionOne.innerHTML = "Name a Webpage Framework";
+    var ansbutton = document.getElementById("answer2")
+    ansbutton.addEventListener("click", function () {
+        if (ansbutton = true) {
+            qContainerEl1.classList.add("hide");
+            qContainerEl2.classList.remove("hide");
+            showQ2();
+            showAns2();
+        }
+    })
 }
-var questionOne = document.getElementById("question1");
-var answerQ1 = [
-    "A wood 2x4", 
-    "HTML", 
-    "True", 
-    "False",
-]
 // QUESTION TWO //
 function showQ2() {
     // qContainerEl.classList.remove("hide");
     questionTwo.innerHTML = "What is MS Visual Studio Code?";
 }
-var questionTwo = document.getElementById("question2");
-var answerQ2 = [
-            'A music editing program', 
-            'A 5Star Restaurant',
-            'A text editor',
-            'None of the above'
-]
+// QUESTION THREE
 function showQ3() {
     // qContainerEl.classList.remove("hide");
     questionThree.innerHTML = "what is Google Chrome?";
 }
-var questionThree = document.getElementById("question3");
-var answerQ3 = [
-            'Music editing program',
-            'Web Browser',
-            'A and B',
-            'C and None of the Above',
-]   
+// QUESTION FOUR
 function showQ4() {
     // qContainerEl.classList.remove("hide");
     questionFour.innerHTML = "What is an API?";
 }
-var questionFour = document.getElementById("question4");
-var answerQ4 = [
-            'A 2000s Punk Rock Band',
-            'Set of functions etc',
-            'Color of spray paint',
-            'internet browser',
-]
+// QUESTION FIVE
 function showQ5() {
     // qContainerEl.classList.remove("hide");
     questionFive.innerHTML = "what is a for loop?";
 }
-var questionFive = document.getElementById("question5");
-var answerQ5 = [
-            'A Hot Wheels Toy',
-            'Type of osteoporisis',
-            'A code name for Loopdloop',
-            'None of the Above',
-]
 
-// showing answers
+// showing answers 1-5
 function showAns1() {
     var answer1 = document.getElementById("answer1")
-    answer1.innerHTML = answerQ1[0];
+    answer1.innerHTML = answerQ1.an1;
     var answer2 = document.getElementById("answer2")
-    answer2.innerHTML = answerQ1[1];
+    answer2.innerHTML = answerQ1.an2;
     var answer3 = document.getElementById("answer3")
-    answer3.innerHTML = answerQ1[2];
+    answer3.innerHTML = answerQ1.an3;
     var answer4 = document.getElementById("answer4")
-    answer4.innerHTML = answerQ1[3];
+    answer4.innerHTML = answerQ1.an4;
 }
 function showAns2() {
     var answer1 = document.getElementById("answer1")
-    answer1.innerHTML = answerQ2[0];
+    answer1.innerHTML = answerQ2.an1;
     var answer2 = document.getElementById("answer2")
-    answer2.innerHTML = answerQ2[1];
+    answer2.innerHTML = answerQ2.an2;
     var answer3 = document.getElementById("answer3")
-    answer3.innerHTML = answerQ2[2];
+    answer3.innerHTML = answerQ2.an3;
     var answer4 = document.getElementById("answer4")
-    answer4.innerHTML = answerQ2[3];
+    answer4.innerHTML = answerQ2.an4;
 }
 function showAns3() {
     var answer1 = document.getElementById("answer1")
@@ -128,9 +134,19 @@ function showAns5() {
     answer4.innerHTML = answerQ5[3];
 }
 
-
-
-// function for reseting questions
+// questions 1 logic for correct answer
+ function afterQ1() {
+         // show question 2
+    questiontwo.classList.replace("hide", "show")
+        // grab answer-buttons2 to show
+    var grabA = document.getElementById("answer-buttons2")
+    grabA.classList.add("show")
+        // hides question 1
+    questionOne.classList.replace("show", "hide");
+        // grab answer 1 and hides
+    var grab2 = document.getElementById("answer-buttons1")
+    grab2.classList.add("hide");
+            }
 
 
 // calling next question
