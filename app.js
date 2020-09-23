@@ -1,3 +1,5 @@
+
+// array of objects (questions with answers)
 const questions = [
     {
         question: "What is HTML?",
@@ -40,4 +42,13 @@ const questions = [
             ]
     },
 ];
-console.table(questions);
+// console.table(questions);
+
+// Onclick Listener for the start button
+
+$(".start").on("click", () => {
+    $(".start").addClass("w3-hide")
+    // startGame();
+    });
+
+
