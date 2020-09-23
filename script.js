@@ -1,4 +1,5 @@
 // HTML elements
+import questions from './app.js'
 var startButt = document.getElementById("start-btn");
 var nextButt = document.getElementById("next-btn");
 var qContainerEl1 = document.getElementById("question-container")
@@ -172,6 +173,7 @@ function showAns5() {
     var answer4 = document.getElementById("answer4")
     answer4.innerHTML = answerQ5.an4;
 }
+console.log(questions)
 
 // questions 1 logic for correct answer
 //  function afterQ1() {
