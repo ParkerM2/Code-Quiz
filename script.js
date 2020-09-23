@@ -38,7 +38,7 @@ var answerQ5 = {
     an4 : 'None of the Above',
 }
 // Questions/Answers
-        /// **** MAYBE REMOVE EXTRA DIVS AND PASS NEW Q/A THREW THE SAME DIV?? ******////
+    
 // timer
 
 // start button
@@ -46,7 +46,7 @@ startButt.addEventListener("click", function () {
     showQ1();
     showAns1();
 })
-
+//idk wat is going on
 // QUESTION ONE //
 function showQ1() {
     // qContainerEl.classList.remove("hide");
@@ -54,8 +54,8 @@ function showQ1() {
     var ansbutton = document.getElementById("answer2")
     ansbutton.addEventListener("click", function () {
         if (ansbutton = true) {
-            qContainerEl1.classList.replace("show","hide");
-            qContainerEl2.classList.replace("hide", "show");
+            questionOne.classList.replace("show","hide");
+            questionTwo.classList.replace("hide", "show");
             showAns2();
             showQ2();
             
@@ -66,12 +66,12 @@ function showQ1() {
 function showQ2() {
     // qContainerEl.classList.remove("hide");
     questionTwo.innerHTML = "What is MS Visual Studio Code?";
-    var ansbutton = document.getElementById("answer3")
-    ansbutton.addEventListener("click", function () {
-        if (ansbutton = true) {
+    var ansbutton2 = document.getElementById("answer3")
+    ansbutton2.addEventListener("click", function () {
+        if (ansbutton2 = true) {
             console.log("hio")
-            qContainerEl2.classList.replace("show","hide");
-            qContainerEl3.classList.replace("hide","show");
+            questionTwo.classList.replace("show","hide");
+            questionThree.replace("hide","show");
             showQ3();
             showAns3();
         }
@@ -81,12 +81,12 @@ function showQ2() {
 function showQ3() {
     // qContainerEl.classList.remove("hide");
     questionThree.innerHTML = "what is Google Chrome?";
-    var ansbutton = document.getElementById("answer4")
-    ansbutton.addEventListener("click", function () {
-        if (ansbutton = true) {
+    var ansbutton3 = document.getElementById("answer4")
+    ansbutton3.addEventListener("click", function () {
+        if (ansbutton3 = true) {
             console.log("hji")
-            qContainerEl3.classList.replace("show","hide");
-            qContainerEl4.classList.replace("hide","show");
+            questionThree.classList.replace("show","hide");
+            questionFour.classList.replace("hide","show");
             showQ4();
             showAns4();
         }
@@ -96,11 +96,11 @@ function showQ3() {
 function showQ4() {
     // qContainerEl.classList.remove("hide");
     questionFour.innerHTML = "What is an API?";
-    var ansbutton = document.getElementById("answer4")
-    ansbutton.addEventListener("click", function () {
-        if (ansbutton = true) {
-            qContainerEl4.classList.replace("show","hide");
-            qContainerEl5.classList.replace("hide","show");
+    var ansbutton4 = document.getElementById("answer4")
+    ansbutton4.addEventListener("click", function () {
+        if (ansbutton4 = true) {
+            questionFour.classList.replace("show","hide");
+            questionFive.classList.replace("hide","show");
             showQ5();
             showAns5();
         }
@@ -110,10 +110,10 @@ function showQ4() {
 function showQ5() {
     // qContainerEl.classList.remove("hide");
     questionFive.innerHTML = "what is a for loop?";
-    var ansbutton = document.getElementById("answer3")
-    ansbutton.addEventListener("click", function () {
-        if (ansbutton = true) {
-            qContainerEl5.classList.add("hide");
+    var ansbutton5 = document.getElementById("answer3")
+    ansbutton5.addEventListener("click", function () {
+        if (ansbutton5 = true) {
+            questionFive.classList.add("hide");
         
         }
     })
@@ -138,6 +138,7 @@ function showAns2() {
     answer2.innerHTML = answerQ2.an2;
     var answer3 = document.getElementById("answer3")
     answer3.innerHTML = answerQ2.an3;
+    answer3.innerHTML = true;
     var answer4 = document.getElementById("answer4")
     answer4.innerHTML = answerQ2.an4;
 }
@@ -147,9 +148,9 @@ function showAns3() {
     var answer2 = document.getElementById("answer2")
     answer2.innerHTML = answerQ3.an2;
     var answer3 = document.getElementById("answer3")
-    answer3.innerHTML = answerQ3.an4;
+    answer3.innerHTML = answerQ3.an3;
     var answer4 = document.getElementById("answer4")
-    answer4.innerHTML = answerQ3.an5;
+    answer4.innerHTML = answerQ3.an4;
 }
 function showAns4() {
     var answer1 = document.getElementById("answer1")
