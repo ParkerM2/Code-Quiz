@@ -2,6 +2,7 @@
 
 $(".start").on("click", () => {
     $(".start").addClass("w3-hide");
+    $(".game").addClass("w3-show")
     startGame();
 })
 
