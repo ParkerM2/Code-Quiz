@@ -4,45 +4,46 @@ const questions = [
     {
         question: "What is HTML?",
         answers:
-            [
-                {"A coding language": true},
-                {"A random acronym": false},
-                {"A dog": false},
-                {"A robot": false},
-            ],
+                {"A coding language": true,
+                "A random acronym": false,
+                "A dog": false,
+                "A robot": false},
     },
     {
         question: "What is a Function?",
         answers:
             [
                 {"A type of car": false},
-                {"A popular song name": false},
-                {"A useful tool in javascript": true},
-                {"A computer": false},
+                "A popular song name": false,
+                "A useful tool in javascript": true,
+                "A computer": false,
             ],
     },
     {
         question: "What is a laptop?",
         answers:
-            [
-                {"a book": false},
-                {"A computer designed to sit on your lap": true},
-                {"A skateboard": false},
-                {"A robot": false},
-            ],
+        [
+            {"a book": false,
+            "A computer designed to sit on your lap": true,
+            "A skateboard": false,
+            "A robot": false},
+        ]
     },
     {
         question: "What is CSS?",
         answers:
             [
                 {"Random Acronym" : false},
-                {"Popular name": false},
-                {"Type of Doggo": false},
-                {"Cascading Style Sheets": true},
+                "Popular name": false,
+                "Type of Doggo": false,
+                "Cascading Style Sheets": true},
             ],
     },
 ];
 
+
+var answer = Object.keys(questions[0].answers)
+console.log(answer)
 // function for calling question 0 with answers
 function askQuestionZero() {
     $(".question").html(questions[0].question)
