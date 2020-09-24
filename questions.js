@@ -5,52 +5,48 @@ const questions = [
         question: "What is HTML?",
         answers:
             [
-                "A coding language",
-                "A random acronym",
-                "A dog",
-                "A robot",
+                {"A coding language": true},
+                {"A random acronym": false},
+                {"A dog": false},
+                {"A robot": false},
             ],
-        correct: "A coding language",
     },
     {
         question: "What is a Function?",
         answers:
             [
-                "A type of car",
-                "A popular song name",
-                "A useful tool in javascript",
-                "A computer",
+                {"A type of car": false},
+                {"A popular song name": false},
+                {"A useful tool in javascript": true},
+                {"A computer": false},
             ],
-        correct: "A useful tool in javascript",
     },
     {
         question: "What is a laptop?",
         answers:
             [
-                "a book",
-                "A computer designed to sit on your lap",
-                "A skateboard",
-                "A robot",
+                {"a book": false},
+                {"A computer designed to sit on your lap": true},
+                {"A skateboard": false},
+                {"A robot": false},
             ],
-        correct: "A computer designed to sit on your lap",
     },
     {
         question: "What is CSS?",
         answers:
             [
-                "Random Acronym",
-                "Popular name",
-                "Type of Doggo",
-                "Cascading Style Sheets",
+                {"Random Acronym" : false},
+                {"Popular name": false},
+                {"Type of Doggo": false},
+                {"Cascading Style Sheets": true},
             ],
-        correct: "Cascading Style Sheets",
     },
 ];
 
 // function for calling question 0 with answers
 function askQuestionZero() {
     $(".question").html(questions[0].question)
-    $(".answer0").html(questions[0].answers[0])
+    $(".answer0").html(questions[0].answers)
     $(".answer1").html(questions[0].answers[1])
     $(".answer2").html(questions[0].answers[2])
     $(".answer3").html(questions[0].answers[3])

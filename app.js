@@ -9,4 +9,5 @@ $(".start").on("click", () => {
 // function to start the game
 function startGame() {
     askQuestionZero();
+    console.table(questions)
 }
