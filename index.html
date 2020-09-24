@@ -3,30 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <link href="./style.css" rel="stylesheet"></link>
-  <script defer src="./questions.js" rel="script"></script>
-
-  <script defer src="./app.js" rel="script"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
   <title>CodeZilla</title>
 </head>
 <body>
 <!-- Still need to style -->
-<div class="w3-button start">
-START
-</div>
-
-
-
-
-<div class="w3-container w3-hide game">
-  <div class="w3-card">
-    <h1 class="w3-bar w3-button question"></h1><br>
-    <h2 class="w3-bar w3-button answer0"></h2><br>
-    <h2 class="w3-bar w3-button answer1"></h2><br>
-    <h2 class="w3-bar w3-button answer2"></h2><br>
-    <h2 class="w3-bar w3-button answer3"></h2><br>
+  <div class="w3-button start">START</div>
+  <div class="w3-container w3-hide game">
+    <div id="questionCard" class="w3-card">
+    <div id="answers" class="w3-button w3-bar"></div>
+    </div>
   </div>
-</div>
+  <script src="./questions.js" rel="script"></script>
+  <script src="./app.js" rel="script"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
 </body>
 </html>

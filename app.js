@@ -8,6 +8,6 @@ $(".start").on("click", () => {
 
 // function to start the game
 function startGame() {
-    askQuestionZero();
+    questions[0].askQuestion();
     console.table(questions)
 }
