@@ -46,4 +46,4 @@ function Question(question, answers) {
         })
     }
 }
-        
+        /// maybe insert the Object.values ^ and use that to attack a data-attribute to the buttons to then call in the if statements? 
