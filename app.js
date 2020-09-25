@@ -1,3 +1,6 @@
+//defining variables to shuffle questions
+let shuffleQuestions, questionIndex;
+
 //starting logic for game
 
 $(".start").on("click", () => {
@@ -8,6 +11,13 @@ $(".start").on("click", () => {
 
 // function to start the game
 function startGame() {
-    questions[0].askQuestion();
     console.table(questions)
+    console.log(Question);
+
+    //displaying question/answer one
+    questions[0].askQuestion();
+}
+
+function nextQuestion() {
+    
 }
