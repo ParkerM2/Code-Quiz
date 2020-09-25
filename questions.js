@@ -1,5 +1,5 @@
 
-// array of constructors (questions with answers)
+// array of objects (questions with answers)
 const questions = [
     
         new Question("What is HTML?",

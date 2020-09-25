@@ -14,10 +14,11 @@ function startGame() {
 
 function nextQuestion() {
     questions[0].askQuestion();
-    console.table(questions[0].answers)
+    console.table(questions[0].answers[0])
     console.log(Object.values(questions[0].answers))
+
     $(".answers").on("click", function() {
-        if (Object.values(questions[0].answers) === true) {
+        if (Object.values(questions[0].answers[0]) === true) {
            alert("correct")
         } else {
            alert("incorrect")
