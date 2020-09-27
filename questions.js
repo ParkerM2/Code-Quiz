@@ -39,13 +39,12 @@ function Question(question, answers) {
     this.answers = answers;
     this.val = Object.values(this.answers)
     this.askQuestion = function () {
-        let questionDiv = $('<h1 class="w3-bar w3-jumbo w3-center question">' + this.question + '</h1>')
+        let questionDiv = $('<h1 class="w3-bar w3-jumbo w3-center w3-teal question">' + this.question + '</h1>')
         $("#questionCard").html(questionDiv)
         Object.entries(this.answers).map(item => {
-            let answerBtn = $('<div id="'+ item[1] +'" class="w3-bar w3-button w3-border-black answers">' + item[0] + '</div>')
+            let answerBtn = $('<div id="'+ item[1] +'" class="w3-bar w3-button w3-cyan w3-hover-teal w3-padding  w3-large answers">' + item[0] + '</div>')
             $("#questionCard").append(answerBtn)
         })
     }
 }
 
-        /// maybe insert the Object.values ^ and use that to attack a data-attribute to the buttons to then call in the if statements? 
