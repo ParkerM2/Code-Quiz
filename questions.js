@@ -37,6 +37,8 @@ const questions = [
 function Question(question, answers) {
     this.question = question;
     this.answers = answers;
+    values = Object.values(this.answers);
+    console.log(values[1])
     this.askQuestion = function () {
         let questionDiv = $('<h1 class="w3-bar w3-jumbo w3-center question">' + this.question + '</h1>')
         $("#questionCard").html(questionDiv)
@@ -44,6 +46,8 @@ function Question(question, answers) {
             let answerBtn = $('<div class="w3-bar w3-button w3-border-black answers">' + item + '</div>')
             $("#questionCard").append(answerBtn)
         })
+         
     }
 }
+
         /// maybe insert the Object.values ^ and use that to attack a data-attribute to the buttons to then call in the if statements? 
