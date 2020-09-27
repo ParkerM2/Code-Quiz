@@ -9,19 +9,20 @@ $(".start").on("click", () => {
 
 // function to start the game
 function startGame() {
-    nextQuestion();
+    firstQuestion();
 }
 
-function nextQuestion() {
-    questions[0].askQuestion();
-    console.log(questions[0].answers)
-    console.log(Object.values(questions[0].answers))
+function firstQuestion() {
+    for (i = 0; i < questions.length; i++){
+        questions[i].askQuestion();
 
-    $(".answers").on("click", function() {
-        if (Object.values(questions[0].answers) === true) {
-           alert("correct")
-        } else {
-           alert("incorrect")
-        }
-    })
-}
+        $("#true").on("click", () => {
+            $("#true").addClass("w3-green")
+            $("#false").removeClass("w3-red")
+        });
+        $("#false").on("click", () => {
+            $("#true").removeClass("w3-green")
+            $("#false").addClass("w3-red")
+            console.table(questions[i])
+        });}
+ }

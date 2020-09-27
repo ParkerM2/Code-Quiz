@@ -24,4 +24,7 @@ body {
 }
 .card-text {
   grid-area: text;
+};
+.correct {
+  background-color: green;
 }
