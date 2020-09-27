@@ -7,7 +7,7 @@ const questions = [
                     "A coding language": true,
                     "A random acronym": false,
                     "A dog": false,
-                    "A robot": false
+                    "A robot": false,
         }),
         new Question( "What is a Function?",
                 {
@@ -22,7 +22,7 @@ const questions = [
                     "a book": false,
                     "A computer designed to sit on your lap": true,
                     "A skateboard": false,
-                    "A robot": false
+                    "A robot": false,
         }),
         new Question("What is CSS?",
             {    
@@ -42,9 +42,20 @@ function Question(question, answers) {
         let questionDiv = $('<h1 class="w3-bar w3-jumbo w3-center w3-teal question">' + this.question + '</h1>')
         $("#questionCard").html(questionDiv)
         Object.entries(this.answers).map(item => {
-            let answerBtn = $('<div id="'+ item[1] +'" class="w3-bar w3-button w3-cyan w3-hover-teal w3-padding  w3-large answers">' + item[0] + '</div>')
+            let answerBtn = $('<div id="'+item[1]+'" class="w3-bar w3-button w3-cyan w3-hover-teal w3-padding  w3-large answers">' + item[0] + '</div>')
             $("#questionCard").append(answerBtn)
         })
     }
 }
 
+// need a new solution for this as it does not work
+$("#true").on("click", () => {
+    $("#true").addClass("w3-green")
+    $("#false").removeClass("w3-red")
+});
+$("#false").on("click", () => {
+    $("#false").removeClass("w3-red")
+    $("#false").removeClass("w3-cyan")
+    $("#true").removeClass("w3-green")
+    $("#false").addClass("w3-red")
+});
